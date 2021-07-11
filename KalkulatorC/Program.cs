@@ -62,7 +62,7 @@ namespace KalkulatorC
             if (!Decimal.TryParse(liczba, out var sparsowanyDecymal))
             {
                 Console.WriteLine("Niepoprawny argument");
-                RozparsujDecymala(komunikat);
+                sparsowanyDecymal = RozparsujDecymala(komunikat);
             }
             return sparsowanyDecymal;
         }
